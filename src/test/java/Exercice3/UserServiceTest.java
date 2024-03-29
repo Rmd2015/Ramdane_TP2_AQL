@@ -70,11 +70,11 @@ public class UserServiceTest {
         userService.creerUtilisateur(utilisateur);
 
         // Vérification des arguments capturés
-        verify(utilisateurApiMock).creerUtilisateur(utilisateurCaptor.capture());
-        Utilisateur utilisateurCapture = utilisateurCaptor.getValue();
+        verify(utilisateurApiMock).creerUtilisateur(argumentCaptor.capture());
+        Utilisateur utilisateurCapture = argumentCaptor.getValue();
         assertEquals(utilisateur.getNom(), utilisateurCapture.getNom());
         assertEquals(utilisateur.getPrenom(), utilisateurCapture.getPrenom());
-        assertEquals(utilisateur.getEmail(), utilisateurCapture.getEmail());
+        assertEquals(utilisateur.getMail(), utilisateurCapture.getMail());
     }
 
 }
