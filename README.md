@@ -1,3 +1,4 @@
+EXERCICE04
 1- Les objets dont dépend la classe Jeu et qui sont forcément mockés dans un test pour automatiser jouer sont :
 
 L'objet représentant le joueur (Joueur) : afin de simuler ses mises, débits et crédits.
