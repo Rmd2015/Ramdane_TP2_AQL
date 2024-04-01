@@ -5,9 +5,9 @@ public class UserService implements UtilisateurApi {
     public UserService(UtilisateurApi utilisateurApi) {
         this.utilisateurApi = utilisateurApi;
     }
-    public boolean creerUtilisateur(Utilisateur utilisateur) throws
+    public void creerUtilisateur(Utilisateur utilisateur) throws
             ServiceException {
-       return utilisateurApi.creerUtilisateur(utilisateur);
+        utilisateurApi.creerUtilisateur(utilisateur);
 
     }
 }

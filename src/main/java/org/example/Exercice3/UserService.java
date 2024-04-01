@@ -5,13 +5,10 @@ public class UserService implements UtilisateurApi {
     public UserService(UtilisateurApi utilisateurApi) {
         this.utilisateurApi = utilisateurApi;
     }
-    public boolean creerUtilisateur(Utilisateur utilisateur) throws
+    public void creerUtilisateur(Utilisateur utilisateur) throws
             ServiceException {
-        boolean creationReussie  =  utilisateurApi.creerUtilisateur(utilisateur);
-        if(!creationReussie ){
-            throw new ServiceException("\"Echec de la création de l'utilisateur");
-        }
-        return creationReussie ;
+        utilisateurApi.creerUtilisateur(utilisateur);
+
     }
     public int getIdUtilisateur(Utilisateur u){return u.getIdUtilisateur();}
 

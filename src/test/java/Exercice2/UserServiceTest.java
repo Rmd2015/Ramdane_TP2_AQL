@@ -20,8 +20,7 @@ public class UserServiceTest {
 // TODO : Configuration du comportement du mock, utiliser la
 //directive « when » avec sa méthode « thenReturn »
 // ...
-        when(utilisateurApiMock.creerUtilisateur(utilisateur)).thenReturn(true);
-
+  doNothing().when(utilisateurApiMock).creerUtilisateur(utilisateur);
 // TODO : Création du service avec le mock
         UtilisateurApi userService = new UserService(utilisateurApiMock);
 // ...
