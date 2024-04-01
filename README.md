@@ -4,11 +4,11 @@ L'objet représentant le joueur (Joueur) : afin de simuler ses mises, débits et
 L'objet représentant la banque (Banque) : pour vérifier si elle est solvable, créditer et débiter des sommes.
 
 ## 2- Scénarios (classes d’équivalence) pour tester jouer :
--Le jeu est fermé.
--Le joueur fait une mise valide et la somme des dés est différente de 7.
--Le joueur fait une mise valide et la somme des dés est égale à 7.
--Le joueur est insolvable.
--La banque n'est pas solvable après un gain.
+  - Le jeu est fermé.
+  - Le joueur fait une mise valide et la somme des dés est différente de 7.
+  - Le joueur fait une mise valide et la somme des dés est égale à 7.
+  - Le joueur est insolvable.
+  - La banque n'est pas solvable après un gain.
 
 ## 4 -Test le plus simple : le cas où le jeu est fermé.
 Ce test est un test d'état car il vérifie simplement l'état du jeu (ouvert ou fermé).
