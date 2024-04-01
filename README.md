@@ -1,5 +1,5 @@
-EXERCICE04
-1- Les objets dont dépend la classe Jeu et qui sont forcément mockés dans un test pour automatiser jouer sont :
+# EXERCICE04
+## 1- Les objets dont dépend la classe Jeu et qui sont forcément mockés dans un test pour automatiser jouer sont :
 
 L'objet représentant le joueur (Joueur) : afin de simuler ses mises, débits et crédits.
 L'objet représentant la banque (Banque) : pour vérifier si elle est solvable, créditer et débiter des sommes.
